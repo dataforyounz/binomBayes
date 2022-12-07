@@ -4,16 +4,18 @@
 \alias{get_posterior}
 \title{Compute Posterior Distribution}
 \usage{
-get_posterior(successes, trials, alpha_prior = 1, beta_prior = 1)
+get_posterior(successes, trials, alpha_prior = 1, beta_prior = 1, ci = 0.95)
 }
 \arguments{
-\item{successes}{number of success from binomial process}
+\item{successes}{Number of success from binomial process}
 
-\item{trials}{number of trials}
+\item{trials}{Number of trials}
 
-\item{alpha_prior}{alpha parameter for Beta distribution prior. Defaults to 1.}
+\item{alpha_prior}{Alpha parameter for Beta distribution prior. Defaults to 1.}
 
-\item{beta_prior}{beta parameter for Beta distribution prior. Defaults to 1.}
+\item{beta_prior}{Beta parameter for Beta distribution prior. Defaults to 1.}
+
+\item{ci}{Posterior credible interval. Defaults to 95\%.}
 }
 \description{
 Computes the posterior distribution given the supplied data and Beta distirbution
@@ -21,5 +23,5 @@ priors.
 }
 \examples{
 get_posterior( successes = 5, trials = 10 )
-get_posterior( successes = 5, trials = 10, alpha_prior = 2, beta_prior = 2)
+get_posterior( successes = 5, trials = 10, alpha_prior = 2, beta_prior = 2 )
 }
