@@ -1,10 +1,9 @@
 Package: binomBayes
-Title: What the Package Does (One Line, Title Case)
+Title: Byaesian Beta-Binomial Model
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+    person("Rob", "Taylor", , "rob@dataforyou.co.nz", role = c("aut", "cre"))
+Description: Rather pointless set of functions that computes the posterior for beta-binomial model.
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 Encoding: UTF-8
