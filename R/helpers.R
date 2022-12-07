@@ -45,5 +45,3 @@ compute_posterior_stats <- function( alpha, beta )
 #
 # }
 
-
-
