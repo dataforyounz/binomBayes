@@ -12,7 +12,7 @@ compute_posterior_stats <- function( alpha, beta )
   posterior_mode   <- (alpha - 1) / (alpha + beta - 2)
   posterior_median <- qbeta( p = .50, shape1 = alpha, shape2 = beta )
   posterior_mean   <- alpha / (alpha + beta)
-  posterior_var    <- (alpha * beta) / (alpha + beta) ^ 2 * (alpha + beta + 1)
+  posterior_var    <- (alpha * beta) / ((alpha + beta) ^ 2) * (alpha + beta + 1)
   posterior_sd     <- sqrt( posterior_var )
 
   round( c( mode     = posterior_mode,
